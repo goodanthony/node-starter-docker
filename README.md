@@ -5,6 +5,10 @@ docker compose build
 docker compose up
 ```
 
-Say then start Vite awith react
+Then go to docker desktop
+Find the container and open a shell
+
+```bash
 
 #
+```
