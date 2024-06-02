@@ -1,11 +1,33 @@
 {
+  // Global settings
   "editor.defaultFormatter": null,
   "editor.formatOnSave": true,
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "editor.tabSize": 2,
+  "editor.fontSize": 14,
+  // Language-specific settings
+  "[ruby]": {
+    // Use Shopify's Ruby LSP as the formatter for Ruby files
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "Shopify.ruby-lsp"
+  },
+  "[html]": {
+    // Use the built-in VS Code formatter for HTML
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[erb]": {
+    // ERB files use the same formatter as HTML
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
   "[jsonc]": {
+    // JSON with Comments uses the built-in JSON formatter
     "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[javascript]": {
+    // JavaScript files use the TypeScript and JavaScript language features
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[javascriptreact]": {
+    // React files also use the TypeScript and JavaScript language features
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   }
 }
