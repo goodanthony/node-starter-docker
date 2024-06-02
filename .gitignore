@@ -1,78 +1,49 @@
-# See https://help.github.com/articles/ignoring-files for more about ignoring files.
-
-# Ignore bundler config.
-/.bundle
-
-# Ignore all logfiles and tempfiles.
-/log/*
-!/log/.keep
-/tmp
-!/tmp/.keep
-
-# Ignore pidfiles, but keep the directory.
-tmp/pids/*
-!tmp/pids/
-tmp/cache/*
-!tmp/cache/
-tmp/sockets/*
-!tmp/sockets/
-
-# Ignore uploaded files in development.
-storage/*
-!/storage/.keep
-
-# Ignore master key for decrypting credentials and more.
-/config/master.key
-/config/credentials.yml.enc
-
-# Ignore all local Environment files.
+# Node.js and Application Specific #
+####################################
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
 .env
-.env.*
+.env.local
+.env.production
+.env.test
+app/.cache
 
-# Ignore secrets file.
-/config/secrets.yml
+# Logs and runtime data #
+#########################
+logs/
+*.log
+pids/
+*.pid
+*.seed
+*.pid.lock
 
-# Ignore node_modules
-/node_modules
+# Coverage and Instrumentation #
+################################
+lib-cov/
+coverage/
+.nyc_output/
 
-# Ignore yarn error log
-yarn-error.log
+# Dependency directories #
+##########################
+jspm_packages/
 
-# Ignore Byebug command history file.
-.byebug_history
+# TypeScript #
+##############
+*.tsbuildinfo
 
-# Ignore the result of running tests.
-/coverage/
-/spec/reports/
+# Caches and temporary files #
+##############################
+.npm/
+.eslintcache
+.node_repl_history
+*.tgz
+.cache
+.parcel-cache
+tmp/
+temp/
+devdocs/
 
-# Ignore system test files
-/spec/system/tmp
-
-# Ignore files created by debugging tools.
-/.rdebug_history
-.rspec_history
-
-# Ignore local Rails files.
-/public/assets
-/public/packs
-/public/packs-test
-/public/system
-/public/uploads
-
-# Ignore Webpacker files
-/node_modules
-/public/packs
-/public/packs-test
-/tmp/cache/webpacker
-
-# Ignore non-dockerized development files
-docker-compose.override.yml
-
-# Ignore Mac specific files
-.DS_Store
-
-# Ignore vim swap files
-*.swp
-
-# Ignore project-local tags
-.tags
